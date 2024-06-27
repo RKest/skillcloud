@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+main {
+    position: relative;
+    font-size: 0;
+    height: 100vh;
+}
+div {
+    display: inline-block;
+    position: absolute;
+    font-size: 1rem;
+}

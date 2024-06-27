@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        main {
+            position: relative;
+            height: 100vh;
+        }
+        div {
+            display: inline-block;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<main>
+    {% for skill in skills %}
+    <div style="left: {{skill.x * 100}}%; top: {{skill.y * 100}}%"> {{ skill.text }}</div>
+    {% endfor %}
+</main>
+</body>
+</html>

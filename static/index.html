@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/htmx.org@2.0.0"></script>
+    <script src="/static/scripts/index.js" defer></script>
+    <link href="/static/styles/index.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <button id="init" hx-get="/init" hx-target="#main" hx-swap="innerHTML">Init</button>
+    <button id="measure">Measure</button>
+    <button id="beginPolling">Start</button>
+    <button id="endPolling">End</button>
+</header>
+<main id="main" hx-get="/data" hx-trigger="startPolling" hx-swap="innerHTML">
+</main>
+</body>
+</html>

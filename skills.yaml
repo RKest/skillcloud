@@ -1,0 +1,52 @@
+c++:
+  - https://github.com/martinus/nanobench
+  - https://github.com/taskflow/taskflow
+  - https://github.com/vimpunk/mio
+  - https://github.com/ben-strasser/fast-cpp-csv-parser
+  - https://github.com/ericniebler/range-v3
+  - https://github.com/pboettch/json-schema-validator
+  - https://github.com/gabime/spdlog
+  - https://github.com/fmtlib/fmt
+  - https://github.com/mpusz/mp-units
+  - https://github.com/Neargye/magic_enum
+  - https://github.com/boost-ext/di
+  - https://github.com/boost-ext/te
+  - https://github.com/boost-ext/ut
+  - https://github.com/mavlink/mavlink
+  - https://github.com/chriskohlhoff/asio
+  - https://github.com/google/googletest
+  - https://github.com/wqking/eventpp
+  - https://github.com/opencv/opencv
+  - https://github.com/GStreamer/gstreamer
+  - https://github.com/RenderKit/embree
+  - https://github.com/glfw/glfw
+  - https://github.com/libsdl-org/SDL
+  - https://github.com/raysan5/raylib
+  - https://github.com/NVIDIA/TensorRT
+  - https://github.com/microsoft/onnxruntime
+  - https://github.com/Kitware/CMake
+  - https://github.com/conan-io/conan
+  - name: nlohmann-json
+    link: https://github.com/nlohmann/json
+  - name: tl-expected
+    link: https://github.com/TartanLlama/expected
+  - name: Eigen3
+    link: https://eigen.tuxfamily.org/index.php?title=Main_Page
+  - name: pylon
+    link: https://www:baslerweb:com/en/software/pylon/
+  - name: libtorch
+    link: https://github.com/pytorch/pytorch
+  - name: boost/type_erasure
+    link: https://www.boost.org/doc/libs/1_80_0/doc/html/boost_typeerasure.html
+  - name: boost/pfr
+    link: https://github.com/boostorg/pfr
+  - name: boost/program_options
+    link: https://github.com/boostorg/program_options
+python:
+  - https://github.com/pandas-dev/pandas
+  - https://github.com/matplotlib/matplotlib
+  - https://github.com/pytorch/pytorch
+  - https://github.com/numpy/numpy
+go:
+  - https://github.com/sqlc-dev/sqlc
+  - https://github.com/a-h/templ
