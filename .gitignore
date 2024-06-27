@@ -1,5 +1,7 @@
 .idea
 venv
 results
+src/__pycache__
+__pycache__/
 *.pkl
 *.png
