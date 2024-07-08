@@ -1,11 +1,14 @@
-from flask import Flask, send_from_directory, render_template, request
+from flask import Flask, send_from_directory, render_template, request, session
 from src.data import get_skills, visualize, get_skills_df, unpack_skills, SkillsTensor
 from src.ai import Gym
 from concurrent.futures import ThreadPoolExecutor
 from threading import Lock
 from random import uniform
+from secrets import token_hex
+from uuid import uuid4
 
 app = Flask(__name__)
+app.secret_key = token_hex(16)
 exec = ThreadPoolExecutor(1)
 current_skills = None
 gym: Gym = None
@@ -18,14 +21,14 @@ def root(path):
     return send_from_directory("static", path=path)
 
 
-@app.route("/init")
+@app.route("/init", methods=["GET"])
 def init():
-    assert request.method == "GET"
     global current_skills
     skills_df = get_skills_df()
     current_skills = unpack_skills(skills_df)
     for s in current_skills:
         s.x, s.y = uniform(0.0, 0.7), uniform(0.0, 0.9)
+    session["session_id"] = uuid4()
     return render_template("template.html", skills=current_skills)
 
 
